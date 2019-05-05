@@ -96,8 +96,8 @@ finally:
 email = "Katongo@gmail.com"
 
 with smtplib.SMTP("localhost", 1025) as server:
-    subject = "Playing fifa tommorrow"
-    body = "Are you up for it?"
+    subject = "Fifa"
+    body = "Are you up for Fifa Tomorrow?"
 
     msg = f'Subject: {subject} \n\n {body}'
     server.sendmail(email, 'onganip@gmail.com', msg)
