@@ -4,9 +4,9 @@ from email.mime.multipart import MIMEMultipart
 
 
 '''sender_email = ""
-receiver_email = "onganip@gmail.com"
+receiver_email = ""
 message = """\
-Subject: Hi there
+Subject: Real Python
 
 This message is sent from Python."""
 
@@ -17,13 +17,13 @@ password = input("Type your password and press enter: ")
 context = ssl.create_default_context()
 
 with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-    server.login("onganip@gmail.com", password)
+    server.login("", password)
     # TODO: Send email here
     server.sendmail(sender_email, receiver_email, messagecwc)
 
 
-sender_email = "onganip@gmail.com"
-receiver_email = "onganip@gmail.com"
+sender_email = ""
+receiver_email = ""
 password = input("Type your password and press enter:")
 
 
@@ -93,11 +93,11 @@ finally:
     server.quit()
     '''
 
-email = "Katongo@gmail.com"
+email = ""
 
 with smtplib.SMTP("localhost", 1025) as server:
     subject = "Fifa"
     body = "Are you up for Fifa Tomorrow?"
 
     msg = f'Subject: {subject} \n\n {body}'
-    server.sendmail(email, 'onganip@gmail.com', msg)
+    server.sendmail(email, '', msg)
