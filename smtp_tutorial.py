@@ -3,7 +3,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 
-'''sender_email = "onganip@gmail.com"
+'''sender_email = ""
 receiver_email = "onganip@gmail.com"
 message = """\
 Subject: Hi there
